@@ -25,4 +25,10 @@ public class CourseController {
         System.out.println(c.toString());
         return "Course added";
     }
+
+    @GetMapping("/view")
+    public String ViewCourses()
+    {
+        return "Courses view";
+    }
 }
